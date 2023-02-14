@@ -7,7 +7,6 @@ const createListCategory = () => {
     categoryDiv.appendChild(newCategoryDiv)
     newCategoryDiv.appendChild(categoryHeader)
 }
-
 const createListCreater = () => {
     const createrDiv = document.getElementById('listCreater')
     const newCreaterDiv = document.createElement('div')
@@ -22,14 +21,16 @@ const inputListTitle = () => {
     const inputElement = document.createElement('input')
     inputElement.setAttribute('type', 'text')
     inputElement.setAttribute('id', 'inputField')
-    inputElement.setAttribute('placeholder', 'Title of the todo errand')
+    inputElement.setAttribute('placeholder', 'Todo errand')
     createrDiv.appendChild(inputElement)
 }
+
+
 const inputButton = () => {
     const createrDiv = document.getElementById('listCreater')
     const inputButton = document.createElement('button')
     inputButton.setAttribute('id', 'inputButton')
-    inputButton.innerText = 'Submit'
+    inputButton.innerText = 'Add'
     createrDiv.appendChild(inputButton)
 }
 

@@ -1,10 +1,9 @@
-export default function createList(name, content) {
+export default function createList(name) {
     return {
       name: name,
-      content: content,
       class: 'addedTodoList',
-      getList() {
-        return name + ' ' + content;
+      removeList() {
+        document.getElementById(name).remove();
       },
     };
   }
